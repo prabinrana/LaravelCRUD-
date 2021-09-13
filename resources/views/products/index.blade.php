@@ -34,15 +34,18 @@
                 <td>
                     <form action="{{ route('products.destroy',$product->id) }}" method="POST">
 
-
-
                         @csrf
                         @method('DELETE')
-
                         <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+
                     </form>
+                    <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Read</a>
+                    <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
                 </td>
+
             </tr>
+
+
         @endforeach
     </table>
 
