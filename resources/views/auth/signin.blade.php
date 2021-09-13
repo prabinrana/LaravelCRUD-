@@ -9,7 +9,7 @@
                     <div class="card-body">
                         <form method="post" action="{{route('signin.custom') }}">
                             @csrf
-                            <div class=""form-group mb-3>
+                            <div class="form-group mb-3">
                                 <input type="text" name="email" placeholder="Email" id="email-address" class="form-control">
                                 @if($errors->has('email'))
                                     <span class="text-danger">{{$errors->first('email')}}</span>
