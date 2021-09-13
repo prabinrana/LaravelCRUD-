@@ -41,12 +41,17 @@
                         @csrf
                         @method('DELETE')
 
-                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
                     </form>
                 </td>
             </tr>
         @endforeach
     </table>
 
+    <div class="container mt-5" style="max-width:500px">
+        <div class="d-grid">
+            <a href="{{route('logout')}}" class="btn btn-danger">Sign out</a>
+        </div>
+    </div>
 
 @endsection

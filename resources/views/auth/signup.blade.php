@@ -32,9 +32,25 @@
                             <div class="d-grid mx-auto">
                                 <button type="submit" class="btn btn-primary btn-block">Register</button>
                             </div>
+
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
+    </main>
+
+
+    <main class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <a>Already have an account?</a>
+    <button id="myButton" class="float-left submit-button" >Login</button>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "login";
+        };
+    </script>
             </div>
         </div>
     </main>
